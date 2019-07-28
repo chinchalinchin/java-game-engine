@@ -1,0 +1,3 @@
+*** hero's immutable attributes (cannot be changed by in-game play). this file will not be overwritten by save.
+*** walk_speed run_speed lantern_count stun atk_bounce atk_trigger
+150 300 250 15 30 3

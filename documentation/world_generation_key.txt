@@ -1,0 +1,528 @@
+!Note: all coordinates are measured in java where top left is (0,0), right is defined as positive x and down is defined as positive y.
+________________
+________________
+________________
+WORLD PROPERTIES
+_____________________________________________________
+Description: 
+_________________
+Base attributes of the game world. Defines hero's starting conditions. Properties are required for game to compile.
+_________________
+Syntax: 
+_________________
+** ***
+(control code) (state)
+1: (control code): 2 Character [any][any]
+	wl = world layer
+	pp = plot phase
+	wf = world frame
+	ly = layers
+2: (state): 1 Integer 0-1
+	wl states: 0 - 3
+		Note: Layer from Frame Set, ie. A1_W1, A1_W2, A1_W3, A1_W4
+			would be drawn in the frame set was set to A1.
+		Note: Framesets do not have to contain all four images, but
+			if they must contain at least one to be used. If a given frame
+			set layer is not used, but referenced by a portal, the game
+			will not compile. In other words, don't send portals to frame
+			set layers do not exist!
+		Note: This property only exists for file that load saved or new files.
+			While portalling, the configuration files are loaded. These files
+			do not need this property.
+	pp states: plot phase
+		Note: Corresponds to the dialogue loaded in 
+			/words/dialogue_plot_phase_* folder &
+			SceneTriggers loaded in 
+			/cutscenes/scene_triggers_plot_phase_* folder.
+		Note: Only save file world configurations 
+			should have plot phase property specified.
+	wf states: A1 - A2
+		Note: Corresponds to world frames loaded in frame 
+			/imgs/world/ folder.
+	ly states: # of layers in a given world frame set. Game can accept up to
+		  	five layers per frameset.
+
+________________
+________________
+________________
+OBJECTS 
+_____________________________________________________
+Description: 
+_________________
+For a new world or saved generation file, the only required object is the hero, ands its derivative objects: item pouch and equipment. For configuration world generation file, these are not required, as they will be supplied in-game, when traversing frame sets.
+All other objects are optional. Objects define the scope of interaction of the user with the gameworld, beyond basic movement. Any interaction is made through an object parsed into the game. 
+The state of the object is wrote back into world file when saved and reinterpretted next time user loads game. 
+_________________
+Syntax:
+_________________
+** **** **** **** ****[additional arguments]		
+(control code) (x-coords) (y-coords) (width) (height) [additional arguments]
+	Note: parenthesis and brackets are dropped.
+	Note: Hitboxes, doors and portals have widths and heights
+		since their dimensions prescribe in-game collisions
+		and transitions. Most object's widths and heights
+		are configured by configuration files and so do not 
+		require width and height arguments.
+_________________
+1: (control code): 2 Characters: *any* *any*
+	ho = new hero
+	hi = hero item pouch
+	eq = hero equipment triggers
+	w1 = layer 1 hitbox
+	w2 = layer 2 hitbox
+	w3 = layer 3 hitbox
+	w4 = layer 4 hitbox
+	w5 = layer 5 hitbox
+	do = door
+	po = portal
+	np = npc
+	tc = treasure chest
+	ef = effect
+	sw = switch
+	li = light source
+	st = shoveltile
+	pp = pressureplate
+	gt = gate
+	hk = hackbox
+	vi = villain
+	bo = book
+	si = sign
+	sv = save crystak
+	ba = barrel
+	cr = crate
+2: (x-coords): Double
+3: (y-coords): Double
+4: (width): Double
+5: (height): Double
+
+________________
+________________
+________________
+NEW OR SAVED FILE REQUIRED OBJECTS
+________________
+_________________
+Basic Hero Stats
+_________________
+ho 0000 0000 
+_________________
+_________________
+Hero Item Pouch
+_________________
+hi [1] [2]
+[1]: (item lookup code): Integers
+	0 = Potion
+	1 = Bomb
+	2 =
+	3 =
+	4 =
+[2]: (quantity): Integer
+_________________
+_________________
+Hero Equipment Triggers
+________________
+eq [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12]
+(equipment states) syntax:Integers 0 -1
+	0 = Not Enabled, 1 = Enabled
+	[1]: Lantern
+	[2]: Shovel
+	[3]: Crossbow
+	[4]: Shield
+	[5]: Hammer
+	[6]: Rocket Skates
+	[7]: Visor
+	[8]: Axe
+	[9]: Blank1
+	[10]: Blank2
+	[11]: Blank3
+	[12]: Pike
+
+________________
+________________
+________________
+OPTIONAL OBJECTS
+________________
+_________________
+
+Hitbox
+_________________
+** 0000 0000 0000 0000
+(control codes):
+	w1 = layer one hitbox
+	w2 = layer two hitbox
+	w3 = layer three hitbox
+	w4 = layer four hitbox
+	w5 = layer five hitbox
+_________________
+_________________
+Door
+_________________
+_________________
+	Note: Doors connect together a set of world frames.
+		World frames are divided thusly:
+
+			layer one
+			layer two
+			layer three
+			layer four
+			layer five
+
+		Each set of world frames should be the same size, i.e.
+		each set bearing the tag A1, A2, ... , B1, B2, ..., etc.,
+		should always be of the same size. There are no restrictions
+		on the size of different sets; sets can be different sizes,
+		but the members of each set should always be equal in size.
+		A1 and B2, for example, can have different set sizes.
+	
+		There is no inherent reason why layers of a given frame set
+		should all be the same size. The only given is the dimensions
+		of the GameWorld are initialized to whatever is set as the 
+		default layer in the world configuration file. This constrains 
+		the size of all layers in a frame set. It is theoretically 
+		possible to create layers of different sizes, but strange things
+		might occur at the ends of the frame, due to the aforementioned
+		construction.
+
+		World frame sets are connected by portals. Portals trigger a loading
+		event, while layer in a frame set are traversed via doors and do not
+		require a loading event.
+_________________
+do 0000 0000 0000 0000 [1] [2] [3] [4]
+[additional arguments]
+[1]: (layer) syntax: 1 Integer 0 - 4 
+	0: Layer 1
+	1: Layer 2
+	2: Layer 3
+	3: Layer 4
+	4: Layer 5
+[2]: (layer connection) syntax: 1 Integer 0 - 4 
+	0: Layer 1
+	1: Layer 2
+	2: Layer 3
+	3: Layer 4
+	4: Layer 5
+[3]: (layer x insertion coordinate): Integers
+[4]: (layer y insertion coordinate): Integers
+_________________
+_________________
+
+Portal
+_________________
+_________________
+	Note: Portals trigger the loading of a different set
+		of world frames. They are different than doors
+		in this way. With doors, the game does not 
+		have to load in new frames.
+		Portals connect the coordinates of the different
+		world frames. See /imgs/world/world image key.txt
+		for map that shows how the world frames are 
+		connected in game.
+		Portals always transport to the first layer of 
+		the frame set. 
+__________________
+po 0000 0000 0000 0000 [1] [2] [3] [4] [5] 
+[1]: (world frame connection) syntax: String A1 - A2
+[2]: (insertion x coord): Double
+	Note: The horizontal position in the next world frame
+	connected to this portal.
+[3]: (insertion y coord): Double
+	Note: The vertical position in the next world frame 
+	connected to this portal.
+[4]: (layer control) syntax: 1 Integer 0 - 4
+	0: layer 1
+	1: layer 2
+	2: layer 3
+	3: layer 4
+	4: layer 5
+[5]: (insert layer control) syntax 1 Integer 0 - 4
+	0: layer 1
+	1: layer 2
+	2: layer 3
+	3: layer 4
+	4: layer 5
+_________________
+_________________	
+NPC
+_________________
+_________________
+np 0000 0000 [1] [2] [3] [4]
+[additional arguments]
+[1]: (type) syntax: 2 Integer 0 - 4 
+	0: Belmont
+	1: Harry
+	2: Drake
+	3: Scholar
+	4: Abbott
+	5: Matilda
+	6: Pyat
+	7: Pree
+	8: Squalax
+[2]: (message look up) syntax : Integer
+	Note: Cross references word file to load NPC with dialogue.
+	-1: No Message
+[3]: (layer control) syntax: 1 Integer 0 - 4
+	0: layer one
+	1: layer two
+	2: layer three
+	3: layer four
+	4: layer five		
+[4]: (identity): Integer 
+	Note: identifies NPCS in game for cutscenes. Also used to tag effects
+		to NPCS in-game and determines binary and singleton reactions.
+		0 is reserved for Hero.
+		Identities have to be unique, but Identities are only unique to a  given 
+		GameWorld frame set. Different frame sets can use the same identities. . 
+_________________
+_________________
+Villain 
+_________________
+_________________
+vi 0000 0000 [1] [2] [3]
+[1]: (type) syntax: Integer
+	0: golem
+	1: cretin
+[2]: (layer control) syntax: Integer 0 - 4
+	0: layer one
+	1: layer two
+	2: layer three
+	3: layer four
+	4: layer five
+[3]: (identity): Integer
+	Note: identifies Villains in game for cutscenes. Also used to tag effects 
+		to Villains in-game and determines binary and singleton reactions.
+		0 is reserved for Hero.
+		Identities have to be unique, but Identities are only unique to a  given 
+		GameWorld frame set. Different frame sets can use the same identities. 
+_________________
+_________________
+Effect
+_________________
+________________
+ef 0000 0000 [1] [2]
+[1]: (type) Integer
+	1: Clock
+	3: Running Water
+	4: Waterfall 
+	5: WaistWater
+	6: Splash
+	Note: Some Effect Types are reserved for in-game reaction effects, such as knock backs and concussions.
+[2]: (layer control) syntax: Integer 0 - 4
+	0: layer one
+	1: layer two
+	2: layer three
+	3: layer four
+	4: layer five
+
+_________________
+_________________
+Treasure Chest
+_________________
+_________________
+tc 0000 0000 [1] [2] [3]
+[additional arguments]
+[1]: (item lookup code) syntax: 2 Integers 0 - 9 
+	00: Key
+	01: Potion
+	02: Hi-Potion
+	03: Antidote
+	04: Barrier
+	05: Bomb
+	06: Bolt
+[2]: (layer control) syntax: 1 Integer 0 - 4
+	0: layer one
+	1: layer two
+	2: layer three
+	3: layer four
+	4: layer five
+[3]: (state control) syntax: 1 Integer 0 - 1
+	0: closed
+	1: open
+_________________
+_________________
+Shovel Tiles
+_________________
+_________________
+st 0000 0000 [1] [2] [3]
+[additional arguments]
+[1]: (state control) Integer 0 -1
+	0: covered
+	1: uncovered
+[2]: (layer control) Integer 0 - 4
+	0: layer one
+	1: layer two
+	2: layer three
+	3: layer four
+	4: layer five
+[3]: (item lookup code) Integer 0 - 9
+	00: Key
+	01: Potion
+	02: Hi-Potion
+	03: Antidote
+	04: Barrier
+	05: Bomb
+	06: Bolt
+_________________
+_________________
+Light Sources
+_________________
+_________________
+li 0000 0000 [1] [2] [3] [4]
+[1]: (type) syntax: Integer 0 - 8
+	0: Lamp Post
+	1: Beacon	
+	2: Nissa Tree
+	3: Candle
+	4: Shaded Lamp
+	5: Hanging Lantern	
+	6: Ceiling Light
+	7: Camp Fire
+	8: Vertical Lava
+	9: Horizontal Lava
+	10: Lava Bubble 
+	11: Stove
+	12: Torch
+[2]: (state) syntax: Integer 0 - 1
+	0: On
+	1: Off
+[3]: (layer control) syntax: Integer 0 - 4
+	0: layer one
+	1: layer two
+	2: layer three
+	3: layer four
+	4: layer five
+[4]: (anchor) syntax Integer
+	-1:  no anchor
+	else:  same as Switch used to anchor
+_________________
+_________________
+Switch
+_________________
+_________________
+sw 0000 0000 [1] [2] [3]
+[1]: (state) syntax: Integer 0 - 1
+	0: On
+	1: Off
+[2]: (layer control) syntax: Integer 0 - 4
+	0: layer 1
+	1: layer 2
+	2: layer three
+	3: layer four
+	4: layer five
+[3]: (anchor) syntax: Integer
+	Note: same as LightSource or Gate anchored to
+_________________
+_________________
+Hackbox
+_________________
+_________________
+hb 0000 0000 [1] [2]
+[1]: (state) syntax: Integer 0 - 1
+	0: Unhacked
+	1: Hacked
+[2]: (layer control) syntax: Integer 0 - 4
+	0: layer 1
+	1: layer 2
+	2: layer three
+	3: layer four
+	4: layer five
+_________________
+_________________
+PressurePlate
+_________________
+_________________
+pl 0000 0000 [1] [2]
+[1]: (layer) syntax: Integer 0 - 4
+	0: layer 1
+	1: layer 2
+	2: layer three
+	3: layer four
+	4: layer five
+[2]: (anchor) syntax: Integer
+	Note: Same as Gate linked to PressurePlate.
+_________________
+_________________
+Gate
+_________________
+_________________
+gt 0000 0000 [1] [2]
+[1]: (layer) syntax: Integer 0 - 4
+	0: layer one
+	1: layer two
+	2: layer three
+	3: layer four
+	4: layer five
+[2]: (anchor) syntax: Integer
+	Note: Same as PressurePlate or Switch linked to PressurePlate. Can be linked to Gate and Switch at same time.
+
+_________________
+_________________
+Barrel
+_________________
+_________________
+ba 0000 0000 [1] [2]
+[1]: (layer) syntax: Integer 0  - 4
+	0: layer one
+	1: layer two
+	2: layer three
+	3: layer four
+	4: layer five
+[2]: (identity control) syntax: Integer
+
+_________________
+_________________
+Crate
+_________________
+_________________
+cr 0000 0000 [1] [2]
+[1]: (layer control) syntax: Integer 0  - 4
+	0: layer one
+	1: layer two
+	2: layer three
+	3: layer four
+	4: layer five
+[2]: (identity control) syntax: Integer
+
+_________________
+_________________
+Book
+_________________
+_________________
+bo 0000 0000 [1] [2]
+[1]: (layer) syntax: Integer 0  - 4
+	0: layer one
+	1: layer two
+	2: layer three
+	3: layer four
+	4: layer five
+[2]: (message look up) syntax : Integer
+	Note: Cross references word file to load NPC with dialogue.
+	-1: No Message
+
+_________________
+_________________
+Sign
+_________________
+_________________
+si 0000 0000 [1] [2]
+[1]: (layer) syntax: Integer 0  - 4
+	0: layer one
+	1: layer two
+	2: layer three
+	3: layer four
+	4: layer five
+[2]: (message look up) syntax : Integer
+	Note: Cross references word file to load NPC with dialogue.
+	-1: No Message
+
+_________________
+_________________
+SaveCrystal
+_________________
+_________________
+sv 0000 0000 [1]
+[1]: (layer) syntax: Integer 0  - 4
+	0: layer one
+	1: layer two
+	2: layer three
+	3: layer four
+	4: layer five
+

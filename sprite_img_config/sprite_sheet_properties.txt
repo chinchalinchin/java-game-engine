@@ -1,0 +1,25 @@
+*** 
+*** image file formatting
+*** skin properties
+*** number of skins
+16
+*** number of premades
+4
+*** apparel properties
+*** number of apparels
+118
+*** weapon properties
+*** number of weapons
+10
+***
+*** image formatting
+*** sheet properties
+*** width_per_frame height_per_frame
+64 64
+*** state frames_per_state
+magic 7
+thrust 8
+walk 9
+slash 6
+bow 13
+die 6

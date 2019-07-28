@@ -1,0 +1,28 @@
+*** contains information about each state of the villain sprite. Each type has all of these staes.
+*** state_number state_weapon sheet_row
+*** WALK LEFT
+0 -1 9
+*** WALK RIGHT
+1 -1 11
+*** WALK UP
+2 -1 8
+*** WALK DOWN
+3 -1 10
+*** ATTACK LEFT
+4 4 13
+*** ATTACK RIGHT
+5 4 15
+*** ATTACK UP
+6 4 12
+*** ATTACK DOWN
+7 4 14
+*** BOW LEFT
+8 7 17
+*** BOW RIGHT
+9 7 19
+*** BOW UP
+10 7 16
+*** BOW DOWN
+11 7 18
+*** DIE
+12 -1 20 

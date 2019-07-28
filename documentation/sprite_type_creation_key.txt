@@ -1,0 +1,152 @@
+Syntax
+(type_number) (skin) (apparels)
+
+Or you can specify a premade sheet appending pre to in place of the skin argument,
+
+(type_number) pre (premade_sheet_number)
+
+NOTE: Equipment used as apparel is cosmetic only; it does not have any functionality in the game beyond appearance. To take advantage of equipment functionality, equipment must be specified in the state creation.
+
+Premade Sheets:
+	0: abbott
+	1: drake
+	2: harry
+	3: scholar
+
+Skins: 
+	0: female, human chocolate
+	1: female, human ivory
+	2: female, solokai blue
+	3: female, solokai green
+	4: male, human chocolate
+	5: male, human ivory
+	6: male, solokai blue
+	7: male, solokai green
+	8: monster, cretin female
+	9: monster, cretin male
+	10: monster, hollow decayed
+	11: monster, hollow female gray
+	12: monster, hollow female white
+	13: monster, hollow male gray
+	14: monster, hollow male white
+	15: monster, skeleton white
+
+Apparel:
+	0: HEAD, female hair, braid, black
+	1: HEAD, female hair, braid, blonde
+	2: HEAD, female hair, braid, brown
+	3: HEAD, female hair, braid, red
+	4: HEAD, female hair, braid, white
+	5: HEAD, female hair, curly, black
+	6: HEAD, female hair, curly, blonde
+	7: HEAD, female hair, curly, brown
+	8: HEAD, female hair, curly, red
+	9: HEAD, female hair, curly, white
+	10: HEAD, female hair, fountain blonde
+	11: HEAD, female hair, single, black
+	12: HEAD, female hair, single, blonde
+	13: HEAD, female hair, single, brown
+	14: HEAD, female hair, single, red
+	15: HEAD, female hair, single, white
+	16: HEAD, gold crown
+	17: HEAD, hood, black
+	18: HEAD, human, brown moustache
+	19: HEAD, human, elven ears
+	20: HEAD, human, white beard
+	21: HEAD, iron crown
+	22: HEAD, male hair, curly, black
+	23: HEAD, male hair, curly, blonde
+	24: HEAD, male hair, curly, brown
+	25: HEAD, male hair, curly, red
+	26: HEAD, male hair, curly, white
+	27: HEAD, male hair, single, black
+	28: HEAD, male hair, single, blonde
+	29: HEAD, male hair, single, brown
+	30: HEAD, male hair, single, red
+	31: HEAD, male hair, single, white
+	32: HEAD, hair, messy, black
+	33: HEAD, hair, messy, blonde
+	34: HEAD, hair, messy, brown
+	35: HEAD, hair, messy, red
+	36: HEAD, solokai, fin, blue
+	37: HEAD, solokai, fin, green
+	38: HEAD, solokai, hood
+	39: HEAD, solokai, horns
+	40: HEAD, solokai, shortfin, blue
+	41: HEAD, solokai, shortfin, green
+	42: HEAD, wizard hat
+	43: HEAD, bandage
+	44: HEAD, bandana
+	45: HEAD, glasses
+	46: HEAD, monocle
+	47: HEAD, neck tie
+	48: LEGS, pants, black
+	49: LEGS, pants, blue
+	50: LEGS, pants, brown
+	51: LEGS, pants, green
+	52: LEGS, pants, red
+	53: LEGS, formal pants
+	54: LEGS, female pants, green
+	55: LEGS, female shoes, green
+	56: TORSO, bandage
+	57: TORSO, cape, black
+	58: TORSO, cape, blue
+	59: TORSO, cape, gray
+	60: TORSO, cape, white blue
+	61: TORSO, male, robe, black
+	62: TORSO, male shirt, black
+	63: TORSO, male shirt, blue
+	64: TORSO, male shirt, green
+	65: TORSO, male shirt, red
+	66: TORSO, male tunic, black
+	67: TORSO, male tunic, blue
+	68: TORSO, male tunic, green
+	69: TORSO, male tunic, red
+	70: TORSO, scarf, blue
+	71: TORSO, scarf, brown
+	72: TORSO, scarf, grey
+	73: TORSO, scarf, red
+	74: TORSO, male tabard, black
+	75: TORSO, male tabard, blue
+	76: TORSO, male tabard, green
+	77: TORSO, male tabard, red
+	78: TORSO, formal belt
+	79: TORSO, formal bowtie
+	80: TORSO, cloak, black
+	81: TORSO, formal jacket, black
+	82: TORSO, formal jacket, brown
+	83: TORSO, formal jacket, tan
+	84: TORSO, formal shirt
+	85: TORSO, trench coat
+	86: TORSO, vest
+	87: TORSO, female shirt, blue
+	88: TORSO, solokai, female, wings back, green
+	89: TORSO, solokai, female, wings back, blue
+	90: TORSO, solokai, male, wings back, green
+	91: TORSO, solokai, male, wings back, blue
+	92: TORSO solokai, female, wings front, green
+	93: TORSO solokai, female wings, front, blue
+	94: TORSO solokai, male wings, front, green
+	95: TORSO solokai, male wings, front, blue
+	96: EQUIPMENT, boots, plate
+	97: EQUIPMENT, boots, sandal
+	98: EQUIPMENT, female armor, bronze
+	99: EQUIPMENT, female armor, gold
+	100: EQUIPMENT, female armor, plate
+	101: EQUIPMENT, gloves, plate
+	102: EQUIPMENT, greaves, plate
+	103: EQUIPMENT, helmet, bronze
+	104: EQUIPMENT, helmet, gold
+	105: EQUIPMENT, helmet, maximus
+	106: EQUIPMENT, helmet, plate
+	107: EQUIPMEN, male armor, bronze
+	108: EQUIPMENT, male armor, gold
+	109: EQUIPMENT, male armor, plate
+	110: EQUIPMENT, shoulders, bronze
+	111: EQUIPMENT, shoulders, gold
+	112: EQUIPMENT, shoulders, plate
+	113: EQUIPMENT, skirt
+	114: EQUIPMENT, sling
+	115: EQUIPMENT, helmet, horned
+	116: EQUIPMENT, helmet, barbuta
+	117: EQUIPMENT, leather bracers

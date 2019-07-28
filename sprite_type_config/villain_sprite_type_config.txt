@@ -1,0 +1,27 @@
+*** villain_type villain_skin villain_apparel
+*** hollow male, fresh
+0 14 56 48
+*** hollow female, fresh
+1 12 56 48
+*** hollow male, spoiled
+2 13 
+*** hollow female, spoiled
+3 11
+*** hollow, rotten
+4 10
+*** hollow, shambler
+5 15
+*** hollow leader
+6 14
+*** cretin male
+7 9 
+*** cretin female
+8 8
+*** cretin chieftain 
+9 9 
+*** solokai foot soldier
+10 7 
+*** solokai general
+11 7
+*** machinarium grunt
+12 5 

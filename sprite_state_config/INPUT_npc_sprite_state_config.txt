@@ -1,0 +1,20 @@
+*** contains information about each state of the npc sprite. Each type has all of these states.
+*** state_number state_weapon sheet_row
+*** WALK LEFT
+0 -1 9
+*** WALK RIGHT
+1 -1 11
+*** WALK UP
+2 -1 8
+*** WALK DOWN
+3 -1 10
+*** ATTACK LEFT
+4 1 13
+*** ATTACK RIGHT
+5 1 15
+*** ATTACK UP
+6 1 12
+*** ATTACK DOWN
+7 1 14
+*** DIE
+8 -1 20

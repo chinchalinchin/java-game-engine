@@ -1,0 +1,7 @@
+ShovelTile shovel_tile_covered.png shovel_tile_uncovered.png
+TreasureChest chest_unopened.png chest_opened.png
+Switch button_enabled.png button_disabled.png
+HackBox hackbox_unhacked.png hackbox_hacked.png
+PressurePlate plate_unpressed.png plate_pressed.png
+VrainStatue vrain_statue_whole.png vrain_statue_crushed.png
+Gate laser_fence_impassable.png laser_fence_passable.png

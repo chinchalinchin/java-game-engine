@@ -1,0 +1,86 @@
+Script Entry
+____________________________________
+Syntax:
+** ***
+(control code) [arguments]
+Note: parenthesis and brackets are dropped.
+
+a - actor
+m - movement
+s - speech
+p - perform 
+i - interaction
+
+Actor
+___________
+a [0] [00] 
+1: Type Integer
+	0: Villain
+	1: NPC
+2: Identity Integer
+	Note: corresponds to NPC Identity tag.
+	0: Corresponds to Hero
+	else: Identity established in world generation file for 
+	      NPCs and Villains.
+
+Movement
+___________
+m [0] [0000] [0000] [0000] [0000] 
+1: actor
+	0: Hero
+	else: Identity established in world generation file.
+2: starting x position Integer
+	-1: For current position
+	0 - 999999: For specified position
+3: starting y positon Integer
+	-1: For current position
+	0 - 999999: For specified position
+4: ending x position Integer
+	0 - 999999: Specified termination.
+5: ending y position Integer
+	0 - 999999: Specified termination
+
+
+Read
+__________
+r 0
+1: Message key to read
+
+
+Perform
+p [0] [0]
+__________
+1: Action to perform - Integer 0 - 9
+	0:
+	1: 
+2: Actor to perform
+	0: Hero
+	else: identity established in world generation file.
+
+Choice
+___________
+Note: The interaction command will change the plot phase of the GameWorld. Be careful!
+The current plot phase is used to look up dialogue choices for the current interaction output. 
+The message found in the current plot phase dialogue is then associated with a plot phase 
+transition. If the user selects this choice, it will change the plot phase to this 
+phase. This will not affect the cutscene's dialogue until after the cutscene has concluded.
+
+!!Note: The last two arguments occur in pairs. There can be an arbitary amount, but they 
+must always be in pairs! In other words, if there is only 2 choices, there should be two
+pairs of arguments after the control code.
+
+i 99 3 73 4
+
+If there are 3 choices, there should be three pairs of arguments after the control code.
+
+i 100 2 103 3
+
+This signifies the number of choices presented to the user: the message index of the 
+displayed choice, and the GameWorld plot phase this selection will trigger (after
+the cutscene has concluded!)
+___________
+i [*] [*]
+    1: Message Index
+	Note: Index of message in /words/dialogue_plot_phase
+    2: Plot Phase association
+

@@ -1,0 +1,3 @@
+*** collision box definition for sheet sprites.
+*** x_offset y_offset width height
+18 14 28 50

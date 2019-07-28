@@ -1,0 +1,17 @@
+*** width height submerge depth
+*** concussion
+21 17 0
+*** clock
+17 32 0
+*** knockback
+10 8 0 
+*** running water
+40 96 40
+*** waterfall
+84 169 50
+*** waist water
+31 27 20
+*** splash
+33 14 0
+*** hackcloud
+30 30 0

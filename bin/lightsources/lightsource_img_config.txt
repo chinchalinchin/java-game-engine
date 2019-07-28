@@ -1,0 +1,13 @@
+LampPost lamppost.png
+Beacon beacon.png
+NissaTree nissa_tree.png
+Candle candle.png
+ShadedLamp shaded_lamp.png
+HangingLantern hanging_lantern.png
+CeilingLight ceiling_light.png
+CampFire camp_fire
+VerticalLava vertical_lava
+HorizontalLava horizontal_lava
+LavaBubble lava_bubble
+Stove stove
+Torch torch

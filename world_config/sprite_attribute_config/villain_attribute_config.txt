@@ -1,0 +1,18 @@
+***
+*** VILLAIN CONFIGURATION
+*** See README for explanation.
+***
+*** type attack_radius aware_radius health perimeter walk_speed run_speed atk_bounce stun_counter synch_delay atk def atk_trigger atk_length
+***
+***
+*** hollow male fresh
+0 60 120 30 300 100 200 40 20 2 10 1 3 1
+*** hollow female fresh
+1 60 150 30 150 40 80 50 20 2 10 1 3 1
+***
+***
+*** synch_delay is how many updates the game loop spends on each frame in the villain's animation
+*** speed is scaled by a factor of 100
+*** attack_radius must be smaller than aware_radius for enemy user-detection to work accurately.
+*** attack trigger is what frame of the attack animation the game determines if the villain has struck the hero
+*** attack length is how long of an interval the villain has to strike, measured in frames, starting at attack_trigger

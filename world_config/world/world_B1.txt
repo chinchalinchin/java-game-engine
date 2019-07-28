@@ -1,0 +1,196 @@
+***
+***
+*** WORLD PROPERTIES
+*** world frame set
+wf B1
+*** world layers
+ly 2
+***
+*** 
+*** OBJECTS
+*** DOORS
+*** order of the gazing eye outpost
+do 487 87 35 40 0 1 485 68
+do 487 87 35 40 1 0 485 68
+*** shanty hut 
+do 65 164 25 35 0 1 90 155
+do 65 164 25 35 1 0 90 155
+***
+***
+*** PORTALS
+*** to farmhouse
+po 191 2 48 21 A1 104 524 0 0
+*** 
+***
+*** HITBOXES
+*** LAYER 1
+*** LAYER 1: FOREST EDGE
+w1 0 0 121 36
+w1 0 36 64 26
+*** LAYER 1: CONCOURSE RIVERSIDE
+*** upper cliff
+w1 10 137 143 19
+w1 150 145 14 12
+*** stair rocks
+w1 177 208 55 17
+*** lower cliff
+w1 228 209 384 18
+*** river edge
+w1 0 311 325 70
+w1 427 311 174 72
+*** LAYER 1: ORDER OF THE GAZING EYE OUTPOST
+*** well
+w1 339 33 50 40
+*** building
+w1 404 11 80 95
+w1 525 0 73 110
+w1 468 2 75 74
+*** LAYER 1: SHANTY HUT
+w1 8 125 88 35
+w1 10 147 84 25
+*** LAYER 1: DOCKS
+w1 0 282 463 13
+*** LAYER 2
+*** LAYER 2: ORDER OF THE GAZING EYE OUTPOST
+*** outpost boundaries
+w2 321 0 75 158
+w2 392 122 252 105
+*** altar
+w2 460 0 90 10
+*** LAYER 2: SHANTY HUT INTERIOR
+w2 0 0 199 36
+w2 186 0 68 208
+w2 0 200 280 62
+*** stool
+w2 157 167 22 18
+***
+***
+*** LIGHT SOURCES
+*** lamp posts
+li 525 50 0 0 0 0
+li 463 52 0 0 0 0
+*** nissa trees
+li 216 445 2 0 0 0
+li -43 23 2 0 0 0
+li 280 418 2 0 0 0
+li 316 448 2 0 0 0
+li 95 -30 2 0 0 0
+*** candles
+li 536 0 3 0 1 0
+li 464 0 3 0 1 0
+*** beacon
+li 8 129 1 0 0 0
+*** hanging lanterns
+li 454 267 5 0 0 0
+li 455 207 5 0 0 0
+li 301 259 5 0 0 0 
+li 303 200 5 0 0 0
+li 364 199 5 0 0 0
+li 422 30 5 0 1 0
+li 565 30 5 0 1 0
+li 495 30 5 0 1 0
+li 77 119 5 0 1 0
+li 164 119 5 0 1 0
+*** shaded lamp
+li 9 23 4 0 1 0
+*** ceiling light 
+li 129 3 6 0 1 0
+***
+***
+*** EFFECTS
+*** concourse river
+*** waist water
+ef 431 198 5 0 
+ef 402 198 5 0 
+ef 372 198 5 0
+ef 277 198 5 0
+ef 254 198 5 0
+ef 225 198 5 0
+ef 70 284 5 0
+ef 463 233 5 0
+ef 463 260 5 0
+*** wading pool
+ef 494 233 5 0
+ef 494 260 5 0
+ef 525 233 5 0
+ef 525 260 5 0
+ef 556 233 5 0
+ef 556 260 5 0
+ef 586 259 5 0
+ef 586 233 5 0
+*** running water
+ef 583 385 3 0
+ef 545 385 3 0
+ef 507 385 3 0
+ef 469 385 3 0
+ef 429 385 3 0
+ef 391 385 3 0
+ef 354 385 3 0
+ef 313 385 3 0
+ef 275 385 3 0
+ef 236 385 3 0
+ef 196 385 3 0
+ef 158 385 3 0
+ef 0 385 3 0
+ef 39 385 3 0
+ef 79 385 3 0
+ef 117 385 3 0
+*** waterfalls
+ef 323 286 4 0
+ef 70 294 4 0
+*** splashes
+ef 71 299 6 0
+ef 199 293 6 0
+ef 421 210 6 0
+ef 243 211 6 0
+ef 389 294 6 0
+ef 276 211 6 0
+ef 323 292 6 0
+ef 209 210 6 0
+ef 464 220 6 0
+ef 462 282 6 0
+ef 353 438 6 0
+ef 78 445 6 0
+ef 33 374 6 0
+***
+***
+*** SWITCHES
+***
+*** 
+*** SHOVEL TILES
+***
+***
+*** TREASURE CHESTS
+***
+***
+*** BOOKS
+bo 36 27 1 4
+***
+***
+*** SIGNS
+si 324 206 0 8
+***
+***
+*** SAVE CRYSTALS
+sv 541 37 0 5
+*** 
+***
+*** CRATES
+*** IDENTITY 1
+cr 263 114 0 1
+***
+***
+*** BARRELS
+***
+***
+*** VILLAINS
+***
+***
+*** NPCS
+***
+*** IDENTITY 2
+*** SCHOLAR
+np 431 48 4 3 1 2
+***
+***
+***

@@ -1,0 +1,43 @@
+*** worlds are arranged in grid according to worldframe name
+
+A1 A2 A3 A4 A5 A6
+B1 B2 B3 B4 B5 
+C1 C2 C3 C4  
+D1 D2 D3 D4 D5 D6 D7 D8
+E1 E2 E3 E4 E5 
+F1 F2 F3 F4 F4 
+
+
+*** World Map Topology
+*** = : Boundary x : Portal Connection
+
+A1 ========   A2 ========  A3  ======== A4 =================== A5 ====== =
+=             x 	   =		x        The Void      x         = 
+=  Outer      =  Hidden    =  Hollows	=                      =  Fort   =
+=   Farm      =    Forest  =		=                      =   Wren  =
+=  	      =		   =		B4 =================== B5 =====x =
+B1 =x======   =            =		=		       =  	 =
+=             x            x		=   Mount Vrain        = Folly's =
+= Concourse   B2 ========= B3  ======== =		       =   Road  =
+=   Tributary x		   x            = 		       =	 =
+C1 ==x=====   =  Concourse =  Lunar	=		       x	 =
+=	      =    Proper  =   Sanctum	C3 ==================  C4 ====== =
+=  Farmholds  =		   =		=  		       =	 =
+=	      x		   C2  x==x==== =     Slime Bogs       =  Sunken =
+=	      =		   = Concourse  =		       =  Gate   =
+=	      =		   =	Delta   =		       =         =
+=	      =		   x	        x		       =         =
+D1 ===x============ D2 ==x D3 ========= D4 ==x= D5 ==========  D6 ====== D7 ============ D8 ======== =
+=		    =	   x		x	=  Industrial  =  	 =		  = 	     =
+=  The University   = Sch- =		= Power	=    Park      =	 =   Royal 	  =  Dungeon =
+=		    = ola- =  Burrowed	= Plant	=              =  Aurat  =	Castle	  =	     =
+=		    =  r's =	Beach	=	=	       =    City =		  =	     =
+=		    = Plu- =		=	=              =  Center =		  =	     =
+=		    =  nge =		=	x              =   North = ============== = ======== =
+=		    =	   =		=	=              =	 =
+=  ==========================================================  E2 ====== =
+=
+=
+=
+=
+=

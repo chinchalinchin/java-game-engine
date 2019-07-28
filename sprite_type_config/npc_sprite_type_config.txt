@@ -1,0 +1,29 @@
+*** npc_type npc_skin npc_apparel
+*** Prior Dabert
+0 5 24 61 80 97 
+*** Harry
+1 -1 2
+*** Master at Arms Drake
+2 -1 1
+*** Scholar Yolanda
+3 -1 3
+*** Abbott
+4 -1 0
+*** Greer
+5 0 13 17 51 85 96
+*** Pyat'lo
+6 6 52 90 94 96 106
+*** Pree 
+7 6 48 57 74
+*** Squalax
+8 2 89 93 38 99 97
+*** Empress Gwynethe
+9 1 10 16 54 55 87
+*** Emperor Cidolphus
+10 5 31 16 53 84 82 46
+*** Yossarian Umani 
+11 7 38 50 99 73
+*** Machinist 
+12 5
+*** High Vizier 
+13 5

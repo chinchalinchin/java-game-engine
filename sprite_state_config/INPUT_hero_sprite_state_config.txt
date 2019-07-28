@@ -1,0 +1,55 @@
+*** contains information about each state of the hero sprite
+*** state_number state_weapon sheet_row
+***
+*** PRIMARY ITERATION
+*** WALK LEFT
+0 -1 9 1
+*** WALK RIGHT
+1 -1 11 1 
+*** WALK UP
+2 -1 8 1
+*** WALK DOWN
+3 -1 10 1
+*** ATTACK LEFT
+4 5 13
+*** ATTACK RIGHT
+5 5 15
+*** ATTACK UP
+6 5 12 
+*** ATTACK DOWN
+7 5 14 
+*** SHOVEL LEFT
+8 3 5
+*** SHOVEL RIGHT
+9 3 7
+*** SHOVEL UP
+10 3 4 
+*** SHOVEL DOWN
+11 3 6 
+*** HAMMER LEFT
+12 4 13
+*** HAMMER RIGHT
+13 4 15
+*** HAMMER UP
+14 4 12
+*** HAMMER DOWN
+15 4 14 
+*** SHIELD LEFT
+16 8 9
+*** SHIELD RIGHT
+17 8 11
+*** SHIELD UP
+18 8 8
+*** SHIELD DOWN
+19 8 10
+*** BOW LEFT
+20 7 17
+*** BOW RIGHT
+21 7 19
+*** BOW UP
+22 7 16
+*** BOW DOWN
+23 7 18
+*** DIE
+24 -1 20 
+***

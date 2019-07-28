@@ -1,0 +1,47 @@
+***
+*** Note: No inherent reason to tie to Frame Sets
+*** 
+*** WORLD FRAME SET A1
+***
+*** LAYER TWO: Belmont
+++ 1 START
+These blasted monsters! The Lune must be waning! The boys from the Machinarium installed a new-fangled beacon the other day, but I can't get to the power switch out back to turn it on and scare away the golems! 
+-- END
+***
+*** LAYER ONE: Belmont's Wife
+++ 2 START
+Deary me, I can't but pace around the house whilst all these monsters roam about!
+-- END
+***
+***
+*** WORLD FRAME SET B1
+***
+*** LAYER TWO: ducont
+++ 3 START
+Be sure to save your progress outside with the Void Crystal! The Eye of Vrain is always watching!
+-- END
+***
+*** LAYER TWO: Shanty Book
+++ 4 START
+... Day 13 of the New Lune, 534 Third Age: Flow rate exceeds previous season average by 5 cubits per second... ~~ Day 27 of the Half Lune, 534 Third Age: Flow rate continues to increase daily. Flood controls risk overloading in near future, 3 Lunes perhaps? I sent word to the Machinarium this morning. Some part of me wonders if this is another Deluge? Vrain forbid... ~~ Day 5 of the Full Lune, 534 Third Age: The Machinist Guild has sent their reply. I am to continue my observations until a proper dig team can be dispatched to divert the excess flow from the Concourse. In the mean time, by order of the High Vizier, I am to keep an eye on the scholar who has set up down river. 
+-- END
+***
+*** LAYER ONE: River Sign
+++ 5 START
+No swimming when the river is up!
+***
+*** NOT INSTANTIATED YET
+***
+*** Old Man
+++ 6
+Ever since that damned scholar took up residence north of the Concourse, the river current has been unnaturally swift. That can't be a coincidence. That lot is always tampering with Creation. The University should leave magic and the like to Vrain. 
+--
+*** Drake
+++ 7 START
+The Hollow have grown in numbers these past few months. The University thumaturgists say the waning Lune is to blame. Whatever the reason, the King must protect Aurat and her fiefs at all costs!
+-- END
+*** SARA
+++ 8 START
+I've seen lights in the swamp at night! Ghastly things! Mother says they are souls of the departed, people who died in the Void when the Lune was set. Now, they are forever lost to Vrain, condemned to wander Subterra. 
+*shudder* I don't know, but I hope she's wrong!
+-- END

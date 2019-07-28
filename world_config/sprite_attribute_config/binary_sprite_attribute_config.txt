@@ -1,0 +1,23 @@
+*** ShovelTile
+*** width height
+49 48
+*** TreasureChest
+*** width height
+32 33
+*** Switch
+*** width height
+40 40
+*** HackBox
+*** width height
+48 50
+*** PressurePlate 
+*** width height
+30 30
+*** Vrain Statue
+*** width height
+30 30
+*** Gate
+*** width height
+96 86
+***
+*** length of this list, less comments, must not exceed the total of in-game binary objects: ShovelTile, TreasureChest, Switch, HackBox, PressurePlate, VrainStatue, Gate

@@ -1,0 +1,52 @@
+***
+***
+*** WORLD PROPERTIES
+*** world frame set
+wf A2
+*** world layers
+ly 1
+***
+***
+*** OBJECTS
+*** DOORS
+***
+*** PORTALS
+*** to belmont farmhold
+po 0 48 25 35 A1 542 53 0 0
+***
+***
+*** HITBOXES
+*** top row, forest
+w1 0 0 800 22
+*** right upper side
+w1 765 23 39 292
+w1 722 123 42 171
+w1 416 125 302 76
+w1 382 123 34 50
+*** center 
+w1 248 284 251 64
+*** left side
+w1 0 117 91 359
+*** bottom
+w1 0 635 83 167
+w1 96 746 706 99
+w1 89 726 79 27
+*** lower right side
+w1 246 470 289 56
+w1 486 440 312 62
+w1 776 501 24 43
+*** vrain shrine
+w1 644 517 23 30
+*** stacked rocks
+w1 597 512 17 34
+w1 707 520 10 26
+***
+***
+*** LIGHTSOURCES
+li 112 -63 2 0 0 0
+li 360 -64 2 0 0 0 
+li 663 -48 2 0 0 0
+***
+*** HACKBOXES
+hb 319 172 0 0
+hb 267 172 0 0

@@ -1,0 +1,6 @@
+Sign wood_sign.png
+Book book.png
+SaveCrystal save_crystal.png
+Barrel barrel.png
+Crate crate.png
+Lantern lantern.png

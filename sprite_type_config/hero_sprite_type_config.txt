@@ -1,0 +1,9 @@
+*** hero_type hero_skin hero_apparel
+*** normal hero
+0 5 29 51 62 68 97
+*** bronze armor hero
+1 5 51 62 103 107 110 97
+*** gold armor hero
+2 5 51 62 104 108 111 114 97
+*** plate armor hero
+3 5 48 62 101 102 106 109 112 96

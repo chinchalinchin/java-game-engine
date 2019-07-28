@@ -1,0 +1,15 @@
+***
+*** NPC CONFIGURATION
+*** See README for explanation.
+***
+*** type speed perimeter
+*** ducont
+4 10 150 10
+*** cyrus
+5 10 150 10
+*** automaton
+6 25 150 10
+*** sara
+7 10 150 10 
+*** drake
+8 25 150 10

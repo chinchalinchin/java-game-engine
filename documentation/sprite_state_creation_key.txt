@@ -1,0 +1,53 @@
+Syntax:
+(state_number) (state_weapon) (sheet_row)
+
+(state_number) corresponds to procedures hardcoded in game logic. this entry defines what the procedure looks like in game.
+(state_weapon) corresponds to the weapon sheet drawn atop the sprite.
+(sheet_row) corresponds to the row of the sheet the animation will be cut from, and thus determines the number of frames per animation.
+If no weapon is desired, write "-1" instead of providing arguments. You must do this in order for the SpriteSheet to work properly. "-1" or an integer(s) must be provided for all arguments. Missing arguments will result in the failure of the engine.
+
+(sheet _row):
+	magic_up = 0
+	magic_left = 1
+	magic_down = 2
+	magic_right = 3
+	thrust_up = 4
+	thrust_left = 5
+	thrust_down = 6
+	thrust_right = 7
+	walk_up = 8
+	walk_left = 9
+	walk_down = 10
+	walk_right = 11
+	slash_up = 12
+	slash_left = 13
+	slash_down = 14
+	slash_right = 15
+	bow_up = 16
+	bow_left = 17
+	bow_down = 18
+	bow_right = 19
+	die = 20
+
+Frames Per Row:
+	magic_frames 7
+	thrust_frames 8
+	walk_frames 9
+	slash_frames 6
+	bow_frames 13
+	die_frames 6	
+
+Note: Only one type of weapon per state. The type of weapon determines which row of the sprite sheet the animation is pulled from and thus determines the number of frames per animation using that particular weapon.
+
+Weapon:
+	0: axe
+	1: knife
+	2: pickaxe
+	3: shovel
+	4: warhammer
+	5: sword
+	6: spear
+	7: bow
+	8: kite shield
+	9: cane
+

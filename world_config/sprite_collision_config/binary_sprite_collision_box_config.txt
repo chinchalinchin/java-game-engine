@@ -1,0 +1,20 @@
+*** Shovel Tile
+*** x_offset y_offset collision_width collision_height
+5 5 40 40
+*** TreasureChest
+*** x_offset y_offset collision_width collision_height
+3 6 26 22
+*** Switch
+5 5 30 23
+*** x_offset y_offset collision_width collision_height
+*** Hackbox
+6 3 38 33
+*** x_offset y_offset collision_width collision_height
+*** PressurePlate
+6 6 18 16
+*** Vrain Statue
+*** x_offset y_offset collision_width collision_height
+1 1 28 45
+*** Gate
+*** x_offset y_offset collision_width collision_height
+4 3 88 60

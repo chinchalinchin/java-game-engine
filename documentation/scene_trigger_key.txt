@@ -1,0 +1,24 @@
+Syntax:
+*** *** [additional arguments]
+(control code) 0 [arguments]
+
+1: control code
+	lt - location trigger
+	mt - message trigger
+2: scene index Integer
+	Note: scene to be found in /cutscenes/ folder
+
+Location Trigger
+__________
+lt 0 [0] [0]  TODO: world frame? 
+	1: scene index
+	2: x position
+	3: y position
+
+
+Message Trigger
+__________
+mt 0 [0]
+	1: scene index
+	2: message index
+		Note: Indexed against /words/dialogue_plot_phase_*

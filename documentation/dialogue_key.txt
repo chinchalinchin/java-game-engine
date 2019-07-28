@@ -1,0 +1,5 @@
+[msg key] Integer
+++ [msg key] Start of dialogue
+-- End of Dialogue
+~~ New paragraph
+

@@ -1,0 +1,28 @@
+*** type width height outer_radius inner_radius collision_width_modifer collision_height_modifier
+*** lamppost
+0 18 80 400 300 10 40
+*** beacon
+1 32 96 800 750 15 25
+*** lanterntree
+2 89 127 350 275 30 50
+*** candle
+3 6 25 100 80 -1 -1
+*** shaded lamp
+4 20 28 150 140 -1 -1
+*** hanging lantern
+5 11 16 170 160 -1 -1
+*** ceiling light
+6 56 16 200 180
+*** campfire
+7 33 33 300 150 10 15
+*** vertical lava
+8 16 64 150 120 10 10
+*** horizontal lava
+9 64 16 1650 140 10 10
+*** lava bubble
+10 15 16 80 50 5 5
+*** stove
+11 32 19 100 130 10 5
+*** torch
+12 9 31 70 50 -1 -1
+*** if collision_mods are -1, then has no dimensions in-game.

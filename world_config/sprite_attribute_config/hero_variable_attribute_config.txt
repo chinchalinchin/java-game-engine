@@ -1,0 +1,7 @@
+*** HERO'S VARIABE ATTRIBUTES.
+*** 
+*** 
+*** these characteristics can be altered by in-game play.
+*** this file will be overwritten on save each time.
+*** type total_hp current_hp attack defense lantern_inner_rad lantern_outer_rad.
+2 100 90 10 10 200 170

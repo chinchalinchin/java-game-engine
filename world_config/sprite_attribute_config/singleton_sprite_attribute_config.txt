@@ -1,0 +1,18 @@
+*** Sign
+*** width height collision_width_modifier collision_height_modifier
+30 33 5 5
+*** Book
+*** width height collision_width_modifier collision_height_modifier
+22 30 0 0
+*** SaveCrystal
+*** width height collision_width_modifer collision_height_modifier
+65 120 10 30
+*** Crate
+*** width height collision_width_modifier collision_height_modifier
+28 30 10 5
+*** Barrel
+*** width height collision_width_modifier collision_height_modifier
+28 38 10 5
+*** Lantern
+*** width height
+14 25 -1 -1
